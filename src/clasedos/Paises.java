@@ -12,6 +12,7 @@ public class Paises {
 		int[] NumeroInfectados = { 0, 0, 0, 0 };
 		int recuentosi = Integer.MAX_VALUE;
 		int recuentono = Integer.MAX_VALUE;
+		boolean casosciertos = true;
 
 		/*
 		 * recorrer paises y preguntar si existe algun caso de coronavirus en caso
@@ -28,20 +29,23 @@ public class Paises {
 		for (int i = 0; i < PAISES.length; i++) {
 
 			System.out.println(PAISES[i]);
-			System.out.println("Existe un caso de coronavirus en su pais: ,'si' o no");
+			System.out.println("Existe un caso de coronavirus en su pais: ,'si' o 'no'");
 			String linea = sc.nextLine();
 			if (linea.equalsIgnoreCase("si")) {
-				System.out.println(PAISES[i]);
-				recuentosi++;
+				NumeroInfectados[i] = recuentosi++;
 
 			} else if (linea.equalsIgnoreCase("no")) {
-				System.out.println(PAISES[i]);
+				System.out.println(Integer.toString(recuentono));
 				recuentono++;
+				casosciertos = false;
 			}
 
 		}
+		do {
+			System.out.println("Paises");
 
-		System.out.println("numero de casos total: " + recuentosi);ç
+		} while (casosciertos);
+		System.out.println("numero de casos total: " + recuentosi);
 		sc.close();
 	}
 }
