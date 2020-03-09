@@ -1,4 +1,4 @@
-package clasedos;
+package Paises;
 
 public class variablesprimitivas {
 

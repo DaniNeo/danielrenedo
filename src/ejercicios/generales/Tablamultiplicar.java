@@ -16,7 +16,7 @@ public class Tablamultiplicar {
 		for (i = 0; i <= 10; i++) {
 
 			resultado = numero * i;
-			System.out.println(" " + i + "-> " + numero + " * " + i + " resultado " + resultado);
+			System.out.println(" " + i + "-> " + numero + " * " + i + " = " + resultado);
 
 		}
 

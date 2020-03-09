@@ -1,4 +1,4 @@
-package clasedos;
+package Paises;
 
 import java.util.Scanner;
 

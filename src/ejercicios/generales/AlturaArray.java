@@ -15,16 +15,16 @@ public class AlturaArray {
 
 			System.out.println();
 
-			System.out.println("Introduce la altura: " + i + "alturas de personas");
+			System.out.println("Introduce la altura" + (i + 1) + ": ");
 
 			ar[i] = Integer.parseInt(sc.nextLine());
 			System.out.println("La primera altura es.....");
-			System.out.println("altura:" + ar[i]);
+			System.out.println("altura:" + ar[i] + "cms");
 			suma = ar[i] + suma;
 
 		} // final del for
 		media = suma / ar.length;
-		System.out.println("media de altura: " + media);
+		System.out.println("media de altura: " + media + "cms");
 
 	}// final del main
 

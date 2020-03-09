@@ -17,15 +17,26 @@ public class numeroperfectos {
 	 * Si sumamos 1 + 2 + 3 = 6
 	 */
 	public static void main(String[] args) {
-
+		boolean perfecto = true;
+		int divisor = 0;
 		int numeroperfecto = 0;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Escribe un numero perfecto: ");
 		numeroperfecto = Integer.parseInt(sc.nextLine());
-		if (numeroperfecto % i == 0) {
+		for (int j = 1; j <= numeroperfecto || perfecto == true; j++) {
 
+			perfecto = (numeroperfecto % j == 0);
+			if (perfecto == true) {
+
+				divisor = j;
+				System.out.println("los divisores son: " + divisor);
+
+			} else {
+				perfecto = false;
+
+			}
 		}
+		System.out.println("El numero " + numeroperfecto + " es perfecto: " + perfecto);
 
 	}
-
 }

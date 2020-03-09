@@ -84,7 +84,7 @@ public class JugandoConString {
 		System.out.println("buscar la ultima a " + buscarLetra.lastIndexOf('a'));
 
 		// limpiar espacios en blanco
-		String datosIntroducidosUsuario = "    minombre       es Manolo    ";
+		String datosIntroducidosUsuario = "    minombre     es Manolo    ";
 		String limpiarEspacios = datosIntroducidosUsuario.trim();
 		limpiarEspacios = limpiarEspacios.replace("  ", "");
 		System.out.println(limpiarEspacios);
@@ -100,7 +100,7 @@ public class JugandoConString {
 		descodificado = descodificado.replaceAll("n0mb3", "nombre");
 		descodificado = descodificado.replaceAll("3s", "es");
 		descodificado = descodificado.replace("m4n0l0", "manolo");
-		System.out.println(descodificado);
+		System.out.println(descodificado + " y " + textoCodificado);
 		String dni = "2111112";
 
 		int auxsuma = 0;

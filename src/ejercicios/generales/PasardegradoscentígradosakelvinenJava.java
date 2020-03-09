@@ -11,7 +11,7 @@ public class PasardegradoscentígradosakelvinenJava {
 
 		System.out.println("Escribe la temperatura en centigrados: ");
 		temperatura = Integer.parseInt(sc.nextLine());
-		System.out.println("La temperatura en kelvin es: " + (temperatura + 270));
+		System.out.println("La temperatura en kelvin es: " + (temperatura + 270) + "º");
 
 	}
 
