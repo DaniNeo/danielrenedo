@@ -3,7 +3,7 @@ package ejercicios.basicos.estructura.condicional;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class siete {
+public class Siete {
 
 	/*
 	 * Ejemplo de programa con estructura condicional

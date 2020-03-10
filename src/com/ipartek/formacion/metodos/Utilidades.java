@@ -35,7 +35,7 @@ public class Utilidades {
 		
 		
 		for(int i='a'; i<Character.getType(resultados); i++) {
-			resultado=i;
+			resultados=i;
 			
 	}
 

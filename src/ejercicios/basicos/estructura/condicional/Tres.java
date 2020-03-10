@@ -3,7 +3,7 @@ package ejercicios.basicos.estructura.condicional;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class tres {
+public class Tres {
 
 	public static void main(String[] args) throws IOException {
 		Scanner sc = new Scanner(System.in);

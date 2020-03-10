@@ -4,7 +4,7 @@ package ejercicios.basicos.estructura.condicional;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class cuatro {
+public class Cuatro {
 	public static void main(String[] args) throws IOException {
 		char a;
 		char b;

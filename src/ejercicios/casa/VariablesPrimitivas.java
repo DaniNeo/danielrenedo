@@ -1,6 +1,6 @@
 package ejercicios.casa;
 
-public class variablesprimitivas {
+public class VariablesPrimitivas {
 
 	public static void main(String[] args) {
 

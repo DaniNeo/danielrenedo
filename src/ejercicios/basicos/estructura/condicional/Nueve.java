@@ -6,7 +6,7 @@ import java.io.IOException;
 
 import java.util.Scanner;
 
-public class nueve {
+public class Nueve {
 	 /*
 	 * Programa java que lea tres números enteros H, M, S que contienen hora, minutos y
 	 * segundos respectivamente, y comprueba si la hora que indican es una hora válida.

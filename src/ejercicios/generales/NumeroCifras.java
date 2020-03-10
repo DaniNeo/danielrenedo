@@ -2,7 +2,7 @@ package ejercicios.generales;
 
 import java.util.Scanner;
 
-public class uno {
+public class NumeroCifras {
 
 	/*
 	 * 

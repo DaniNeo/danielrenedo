@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.*;
 import java.util.Scanner;
 
-public class seis {
+public class Seis {
 /*
  * La primera consiste en comprobar si el carácter es un dígito mediante el método isDigit
  * de la clase Character. Este método devuelve 

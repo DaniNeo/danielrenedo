@@ -2,7 +2,7 @@ package ejercicios.generales;
 
 import java.util.Scanner;
 
-public class numerosacabadosdos {
+public class NumerosAcabaDos {
 
 	/*
 	 * 
