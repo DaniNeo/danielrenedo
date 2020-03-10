@@ -1,4 +1,4 @@
-package Expeciones;
+package expeciones;
 
 public class Ejercicio3 {
 

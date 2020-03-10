@@ -1,4 +1,4 @@
-package Paises;
+package ejercicios.casa;
 
 public class variablesprimitivas {
 

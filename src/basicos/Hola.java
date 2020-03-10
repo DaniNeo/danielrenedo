@@ -1,4 +1,4 @@
-package practicas;
+package basicos;
 
 public class una {
 

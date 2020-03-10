@@ -1,4 +1,4 @@
-package Expeciones;
+package expeciones;
 
 import java.io.IOException;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package Coches;
+package array.objetos;
 
 public class Coche {
 

@@ -7,10 +7,11 @@ public class EjemploDeUso {
 		String manolo = "Manolo";
 
 		Utilidades.saludar(manolo);
-
+		Utilidades.saludar(juan, );
 		Utilidades.saludar(manolo, Utilidades.IDIOMA_CASTELLANO);
 		Utilidades.saludar(manolo, Utilidades.IDIOMA_EUSKERA);
 		Utilidades.saludar(manolo, Utilidades.IDIOMA_INGLES);
+		
 
 		System.out.println(" 3 + 3 = " + Utilidades.suma(3, 3));
 

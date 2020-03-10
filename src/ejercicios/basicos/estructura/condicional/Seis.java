@@ -1,4 +1,4 @@
-package çejercicios.basicos.estructura.condicional;
+package ejercicios.basicos.estructura.condicional;
 
 import java.io.IOException;
 import java.io.*;

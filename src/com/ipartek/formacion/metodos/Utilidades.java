@@ -1,6 +1,5 @@
 package com.ipartek.formacion.metodos;
 
-
 public class Utilidades {
 
 	public static final String IDIOMA_CASTELLANO = "es";
@@ -28,8 +27,16 @@ public class Utilidades {
 	}
 
 	static char calcularLetraDni(int dni) {
-		// TODO cacular la letra vosotros
-		return 'x';
+
+		char resultado=' ';
+		int resultados=0;
+		
+		resultados=dni% 23;
+		
+		
+		for(int i='a'; i<Character.getType(resultados); i++) {
+			resultado=i;
+			
 	}
 
 	static char calcularLetraDni(String dni) {

@@ -1,4 +1,4 @@
-package Expeciones;
+package expeciones;
 
 import java.util.Scanner;
 

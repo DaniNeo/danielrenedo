@@ -1,4 +1,4 @@
-package Paises;
+package ejercicios.casa;
 
 import java.util.Scanner;
 
