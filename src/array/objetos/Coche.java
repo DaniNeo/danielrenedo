@@ -1,23 +1,24 @@
 package array.objetos;
 
+import java.util.ArrayList;
+
 public class Coche {
 
+		
 		private int matricula;
 		private String marca;
 		private String modelo;
 		private int km;
 		
+		
+
 		public int DevolverMatricula() {
 			
 			return matricula;
 		
 		}
 		
-		public void InsertarMarca(String mc) {
-			
-			this.marca=mc;
-			
-		}
+		
 		
 		public String DevolverMarca() {
 			
@@ -31,6 +32,13 @@ public class Coche {
 			
 		}
 		
+		public int DevolverKms() {
+			
+			return km;			
+		
+			
+		}
+		
 		public String DevolverModelo() {
 			
 			return modelo;
@@ -40,6 +48,18 @@ public class Coche {
 		public void InsertarModelo(String mo) {
 			
 			this.modelo=mo;
+			
+		}
+
+		public void InsertarMatricula(int mc) {
+				this.matricula=mc;
+			
+		}
+
+
+
+		public void InsertarMarca(String m) {
+				this.marca=m;
 			
 		}
 		

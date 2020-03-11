@@ -5,7 +5,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * En esta entrada vamos a escribir un programa Java que crea un ArrayList de Objetos de tipo Coche. El programa pide por teclado los datos de los coches y los guarda en el array. A continuación utilizará el ArrayList para mostrar por pantalla lo siguiente:
+ * En esta entrada vamos a escribir un programa Java que crea un ArrayList de Objetos de tipo Coche. 
+ * El programa pide por teclado los datos de los coches y los guarda en el array. 
+ * A continuación utilizará el ArrayList para mostrar por pantalla lo siguiente:
 -         Todos los coches introducidos.
 -         Todos los coches de una marca determinada.
 -         Todos los coches con menos de un número determinado de Kilómetros.
@@ -16,17 +18,21 @@ import java.util.Scanner;
  */
 public class Principal {
 
+	static ArrayList<Coche> coches = new ArrayList<Coche>();
+	
+	
+	
 	public static void main(String[] args) {
 	
-		ArrayList <String> ar= new ArrayList();
-		Scanner sc= new Scanner(System.in);
+		
+		Scanner sc = new Scanner(System.in);
 		InsertarCoches();
 		leerCoches();
 		leerMarcaCoches();
 		leerKmsCoches();
 		leerMayorKm();
 		ordenarCoches();
-		
+		sc.close();
 	
 
 	}
@@ -51,14 +57,34 @@ public class Principal {
 		
 	}
 
-	private static void InsertarCoches() {
-		// TODO Auto-generated method stub
+	public static void InsertarCoches() {
+		
+		
+		
+		
+			Coche car;
+			car =new Coche();
+			car.InsertarMatricula(3423);
+			car.InsertarMarca("Citroen");
+			car.InsertarModelo("C5");
+			car.InsertarKms(0);
+			
+			
+			
+		
+		coches.add(car);
 		
 	}
 
 	public static void leerCoches() {
-		// TODO Auto-generated method stub
 		
+		for (int i = 0; i < coches.size(); i++) {
+			
+		
+		System.out.println("La marca del coche es: "+coches.get(i).DevolverMarca());
+		System.out.println("El modelo del coche es: "+coches.get(i).DevolverModelo());
+		System.out.println("Los kilometros del coche es: "+coches.get(i).DevolverKms());
+		System.out.println(coches.get(i).DevolverMatricula());
 	}
-
+	}
 }
