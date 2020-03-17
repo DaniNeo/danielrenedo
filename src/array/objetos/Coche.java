@@ -5,62 +5,113 @@ import java.util.ArrayList;
 public class Coche {
 
 		
-		private int matricula;
+		private String matricula;
 		private String marca;
 		private String modelo;
-		private int km;
-		
-		
+		private int potencia;
+		private int cilindrada;
+		private String color;
 
-		public int DevolverMatricula() {
-			
+	public Coche(String matricula, String marca, String modelo, int potencia, int cilindrada, String color) {
+			super();
+			this.matricula = matricula;
+			this.marca = marca;
+			this.modelo = modelo;
+			this.potencia = potencia;
+			this.cilindrada = cilindrada;
+			this.color = color;
+		}
+
+
+
+		public String getColor() {
+			return color;
+		}
+
+
+
+		public void setColor(String color) {
+			this.color = color;
+		}
+
+
+
+		public String getMatricula() {
 			return matricula;
-		
 		}
-		
-		
-		
-		public String DevolverMarca() {
-			
+
+
+
+		public void setMatricula(String matricula) {
+			this.matricula = matricula;
+		}
+
+
+
+		public String getMarca() {
 			return marca;
-		
 		}
-		
-		public void InsertarKms(int k) {
-			
-			this.km=k;
-			
+
+
+
+		public void setMarca(String marca) {
+			this.marca = marca;
 		}
-		
-		public int DevolverKms() {
-			
-			return km;			
-		
-			
-		}
-		
-		public String DevolverModelo() {
-			
+
+
+
+		public String getModelo() {
 			return modelo;
+		}
+
+
+
+		public void setModelo(String modelo) {
+			this.modelo = modelo;
+		}
+
+
+
+		public int getPotencia() {
+			return potencia;
+		}
+
+
+
+		public void setPotencia(int potencia) {
+			this.potencia = potencia;
+		}
+
+
+
+		public int getCilindrada() {
+			return cilindrada;
+		}
+
+
+
+		public void setCilindrada(int cilindrada) {
+			this.cilindrada = cilindrada;
+		}
+
+
+
 		
-		}
-		
-		public void InsertarModelo(String mo) {
-			
-			this.modelo=mo;
-			
-		}
 
-		public void InsertarMatricula(int mc) {
-				this.matricula=mc;
-			
+
+
+		@Override
+		public String toString() {
+			return "Coche [matricula=" + matricula + ", marca=" + marca + ", modelo=" + modelo + ", potencia="
+					+ potencia + ", cilindrada=" + cilindrada + ", color=" + color + "]";
 		}
 
 
 
-		public void InsertarMarca(String m) {
-				this.marca=m;
-			
+		public Coche() {
+			super();
+			// TODO Auto-generated constructor stub
 		}
-		
+
+
 }

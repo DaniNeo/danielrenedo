@@ -1,90 +1,104 @@
 package array.objetos;
 
-import java.security.PublicKey;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/**
- * En esta entrada vamos a escribir un programa Java que crea un ArrayList de Objetos de tipo Coche. 
- * El programa pide por teclado los datos de los coches y los guarda en el array. 
- * A continuación utilizará el ArrayList para mostrar por pantalla lo siguiente:
--         Todos los coches introducidos.
--         Todos los coches de una marca determinada.
--         Todos los coches con menos de un número determinado de Kilómetros.
--         El coche con mayor número de Kilómetros.
--         Todos los coches ordenados por número de kilómetros de menor a mayor.
+/**	EJERCICIO DOS
  * @author Daniel Renedo Castaños
  *
  */
 public class Principal {
 
-	static ArrayList<Coche> coches = new ArrayList<Coche>();
-	
-	
-	
+	 static ArrayList<Coche> coches = new ArrayList<Coche>();
+	 static Scanner sc = new Scanner(System.in);
+	 static String opcion="";
+	 static int N=0;
+	 
 	public static void main(String[] args) {
 	
 		
-		Scanner sc = new Scanner(System.in);
-		InsertarCoches();
-		leerCoches();
-		leerMarcaCoches();
-		leerKmsCoches();
-		leerMayorKm();
-		ordenarCoches();
-		sc.close();
+		
+			
+		boolean respuesta = true;
+		do {
+			System.out.println("Quieres traer nuevos coches (responda ''si'' en casa de que quiera sino ''no'' ''o cualquier otra tecla''.....): ");
+			opcion =sc.nextLine();
+			
+			
+			opcion=opcion.toLowerCase();	
+		
+		
+		
+		switch (opcion) {
+		case "si" :
+			
+			System.out.println("Insertar los coches: ");
+			System.out.println("Cuantos coches quieres en la fabrica:");
+			N =Integer.parseInt(sc.nextLine());
+			InsertarCoches(N);
+			System.out.println("**************************");
+			System.out.println("Mostrar los coches");
+			leerCoches();
+			break;
+			
+		case "no":
+			System.out.println("Finalizamos el programa, hasta otra.....de nueva...");
+			respuesta=false;
+			break;
+		default:
+			System.out.println("las respuesta validas son si o no , para seguir con el gestor de programa");
+			respuesta=true;
+			break;
+		}
+			} while ((opcion=="si" || opcion == "no" || respuesta));
+	
+	}
+
 	
 
-	}
-
-	private static void ordenarCoches() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private static void leerMayorKm() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private static void leerKmsCoches() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	private static void leerMarcaCoches() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public static void InsertarCoches() {
+	public static void InsertarCoches( int N) {
 		
 		
 		
 		
 			Coche car;
 			car =new Coche();
-			car.InsertarMatricula(3423);
-			car.InsertarMarca("Citroen");
-			car.InsertarModelo("C5");
-			car.InsertarKms(0);
+			for (int i=0; i< N; i++){
+				System.out.println("Introduce la matricula del coche: ");
+				car.setMatricula(sc.nextLine());
+				
+				System.out.println("Introduce la marca del coche: ");
+				car.setMarca(sc.nextLine());
+				
+				
+				System.out.println("Introduce el modelo del coche: ");
+				car.setModelo(sc.nextLine());
+				
+				System.out.println("Introduce el color del coche: ");
+				car.setColor(sc.nextLine());
+				
+				
+				System.out.println("Introduce la cilindrada del coche: ");
+				car.setCilindrada(Integer.parseInt(sc.nextLine()));
+				
+				System.out.println("Introduce la potencia del coche: ");
+				car.setPotencia(Integer.parseInt(sc.nextLine()));
+				coches.add(i, car);
+			}
 			
 			
 			
 		
-		coches.add(car);
+	
 		
 	}
 
 	public static void leerCoches() {
 		
-		for (int i = 0; i < coches.size(); i++) {
+		for (Coche coche : coches) {
 			
-		
-		System.out.println("La marca del coche es: "+coches.get(i).DevolverMarca());
-		System.out.println("El modelo del coche es: "+coches.get(i).DevolverModelo());
-		System.out.println("Los kilometros del coche es: "+coches.get(i).DevolverKms());
-		System.out.println(coches.get(i).DevolverMatricula());
-	}
+			System.out.println(coche.toString());
+		}
+	
 	}
 }

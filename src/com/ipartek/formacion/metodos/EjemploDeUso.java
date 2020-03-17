@@ -16,7 +16,7 @@ public class EjemploDeUso {
 		System.out.println(" 3 + 3 = " + Utilidades.suma(3, 3));
 
 		System.out.println("La letra del dni 11111111 es " + Utilidades.calcularLetraDni("11111111"));
-		System.out.println("La letra del dni 11111111 es " + Utilidades.calcularLetraDni(11111111));
+		System.out.println("La letra del dni 11111111 es " + Utilidades.calcularLetraDni(72057656));
 
 	}
 

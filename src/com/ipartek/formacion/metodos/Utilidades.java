@@ -1,5 +1,7 @@
 package com.ipartek.formacion.metodos;
 
+import java.io.Serializable;
+
 public class Utilidades {
 
 	public static final String IDIOMA_CASTELLANO = "es";
@@ -26,6 +28,7 @@ public class Utilidades {
 		return a + b;
 	}
 
+	@SuppressWarnings("unused")
 	static char calcularLetraDni(int dni) {
 
 		char resultado=' ';
@@ -35,7 +38,7 @@ public class Utilidades {
 		
 		
 		for(int i='a'; i<Character.getType(resultados); i++) {
-			resultados=i;
+			resultado=Character.toChars(i);
 		}
 		
 		return resultado;
