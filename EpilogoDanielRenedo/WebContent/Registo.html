@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+		<title>Epilogo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+</head>
+<body>
+<!-- Header -->
+			<header id="header" class="alt">
+				<div class="inner">
+					<h1>Registro</h1>
+				</div>
+			</header>
+</body>
+
+
+						
+						
+<section id="cta" class="main special">
+ 		<h1> Formulario </h1>
+        <form action = "formulario.php" method = "post">
+        
+         <fieldset>
+            <h3><b>Datos Personales</b></h3>
+            <div class = "cont2">
+                <label for = "nombre"> Nombre </label>
+                <input type = "text" id = "nombre" name = "nombre" placeholder = "nombre y apellidos" required="required">
+                <br>
+                <br>
+                <label for = "direccion"> Dirección </label>
+                <textarea name = "direccion" id = "direccion" placeholder = "calle, número, piso, ciudad" required = "required"> </textarea>
+                <br>
+                <br>
+                <label for = "codigopostal"> Código Postal </label>
+                <input type = "text" id = "codigopostal" placeholder = "código postal"  required = "required">
+                <br>
+                <br>
+                <label for = "pais"> País </label>
+                <select name = "pais" id = "pais" required = "required">
+                    <option value = "AF"> Afganistán </option>
+                    <option value = "AL"> Albania </option>
+                    <option value = "ES"> España </option>
+
+                </select>
+                <br>
+                <br>
+                <label for = "telefono"> Número de teléfono </label>
+                <input type = "tel" id = "telefono" name = "telefono" required = "required" placeholder = "teléfono con prefijo">
+            </div>
+        </fieldset>
+         <br>
+        <input type = "submit" value = "Enviar">       
+        
+        <input class = "boton2" type = "reset" value = "Borrar">
+        				
+		
+		</form>
+		</section>
+        
+        
+</html>
